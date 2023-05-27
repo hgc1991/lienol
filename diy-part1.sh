@@ -16,3 +16,11 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+sed -i '$a src-git packages https://github.com/Lienol/openwrt-packages.git;21.02' feeds.conf.default
+sed -i '$a src-git luci https://github.com/Lienol/openwrt-luci.git;21.02' feeds.conf.default
+sed -i '$a src-git routing https://git.openwrt.org/feed/routing.git;openwrt-21.02' feeds.conf.default
+sed -i '$a src-git telephony https://git.openwrt.org/feed/telephony.git;openwrt-21.02' feeds.conf.default
+sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package.git;main' feeds.conf.default
+sed -i '$a src-git other https://github.com/Lienol/openwrt-package.git;other' feeds.conf.default
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
